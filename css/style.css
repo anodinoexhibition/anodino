@@ -171,7 +171,7 @@ button{
   user-select: none;
 }
 
-.btn{
+.btn, .btn_ctl{
   line-height: 1.5;
   background-color: var(--white-alpha-25);
   border: 1px solid var(--white-alpha-40);
@@ -191,7 +191,7 @@ button{
   transition: color 0.3 ease;
 }
 
-.btn::before{
+.btn::before, .btn_ctl::before{
 
   content: '';
   position: absolute;
@@ -204,11 +204,11 @@ button{
   transition: width 0.3s ease;
 }
 
-.btn:hover::before{
+.btn:hover::before, .btn_ctl:hover::before{
   width: 100%;
 
 }
-.btn:hover{
+.btn:hover, .btn_ctl:hover{
   color: var(--white);
 
 }
